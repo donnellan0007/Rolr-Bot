@@ -1,5 +1,6 @@
 import discord
 import asyncio
+import keys.rolrkey as rolrkey
 
 client = discord.Client()
 
@@ -15,4 +16,4 @@ async def on_message(message):
     if message.content.startswith('!'):
         await message.channel.send('What do you want me to do?')
 
-client.run('NzQ4MDA4MjkwODk3NzU2MjIw.X0XLAQ.fTgQUGbnfRL47an9YNSFYDQbQdE')
+client.run(rolrkey)
